@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Identification</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <style>
+        body { font-family: Arial, sans-serif; background: #f7f7f7; margin: 0; }
+        .page { max-width: 920px; margin: 0 auto; padding: 32px 20px; }
+        .card { background: #fff; border-radius: 10px; padding: 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+        .title { margin: 0 0 6px 0; }
+        .sub { margin: 0 0 18px 0; color: #555; }
+        .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+        #btn-predict { padding: 12px 30px; border: 0; background: #34495E; color: #fff; cursor: pointer; }
+        #btn-predict:hover { background: #2c3e50; }
+        #result { margin-top: 14px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="page">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJ+Y3VCR5Q0sJmq9zc3rroWAtxE6C0Bp3jJZU=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
