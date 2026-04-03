@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h1 class="title">Skin Disease Identification</h1>
+    <p class="sub">Upload a skin image to get a prediction for Acne, Melanoma, Psoriasis, Rosacea, or Vitiligo.</p>
+
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <div class="controls">
+            <label for="imageUpload" class="upload-label">Choose Image</label>
+            <input id="imageUpload" type="file" name="file" accept="image/*" />
+            <button type="button" id="btn-predict">Predict</button>
+        </div>
+    </form>
+
+    <div class="image-section">
+        <div class="img-preview">
+            <div id="imagePreview"></div>
+        </div>
+    </div>
+
+    <div class="loader"></div>
+    <div id="result"></div>
+</div>
+{% endblock %}
