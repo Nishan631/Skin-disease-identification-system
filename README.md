@@ -236,4 +236,4 @@ For questions or issues, please:
 
 **Made with ❤️ by [Nishan631](https://github.com/Nishan631)**
 
-*Last Updated: 2024*
+*Last Updated: April, 2026*
